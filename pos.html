@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Facebook</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+@media only screen and (max-width:720px){
+body{
+background-color:red;
+}
+
+
+.container{
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+height:600px;
+
+}
+.container>div{
+border:1px solid grey;
+padding:5px;
+}
+}
+
+@media only screen and (min-width:720px){
+
+body{
+background-color:powderblue;
+}
+
+
+.container{
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+.container>div{
+border:1px solid grey;
+padding:5px;
+}
+}
+
+h1{
+text-transform:uppercase;
+font-size:45px;
+background-image:linear-gradient(to right,red,blue,green,yellow,powderblue);
+background-clip:text;
+color:transparent;
+width:450px;
+}
+
+img:hover{
+filter:hue-rotate(60deg);
+}
+</style>
+</head>
+<body>
+
+	<div>
+	<h1>Marvel Studio</h1>
+	</div>
+	
+	<div class="container">
+	<div style="flex-grow:1;">
+	<img src="ironman.webp" class="img1" height="150" width="150">
+	
+	</div>
+	<div  style="flex-grow:3;">
+	<img src="hulk.webp" class="img1" height="150" width="150">
+	
+	</div>
+	<div  style="flex-grow:1;">
+	<img src="capt.jpg" class="img1" height="150" width="150">
+	</div>
+	<div  style="flex-grow:1;">
+	<img src="panther.jpg" class="img1" height="150" width="150">
+	</div>
+	<div  style="flex-grow:1;">
+	<img src="thanos.webp" class="img1" height="150" width="150">
+	</div>
+	<div  style="flex-grow:1;">
+	<img src="thor.jpg" class="img1" height="150" width="150">
+	</div>
+
+	</div>
+
+</body>
+</html>
